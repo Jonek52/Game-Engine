@@ -1,7 +1,8 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
 #include <iostream>
+#include <GL/glew.h>  
+#include <GLFW/glfw3.h>
 namespace sparky {
 	namespace graphics {
 
