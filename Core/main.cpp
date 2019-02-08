@@ -20,7 +20,12 @@ int main () {
 	vec4 result = vector + vector1;
 
 	mat4 position = mat4::translation (vec3 (2, 3, 4));
-	while (!window.Closed ()) {
+
+	vec4 column4 = position.columns[3];
+
+	std::cout << column4 << std::endl;
+
+ 	while (!window.Closed ()) {
 
 		window.Clear ();
 
