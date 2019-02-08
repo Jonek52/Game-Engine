@@ -1,9 +1,11 @@
 #include "src/graphics/window.h"
+#include "src/maths/maths.h"
 
 int main () {
 
 	using namespace sparky;
 	using namespace graphics;
+	using namespace math;
 
 	Window window ("Sparky!", 800, 600);
 	glClearColor (0.2f, 0.3f, 0.8f, 1.0f);
@@ -13,13 +15,14 @@ int main () {
 	glGenVertexArrays (1, &vao);
 	glBindVertexArray (vao);
 
+	vec4 vector (0.2f, 0.3f, 0.8f, 1.0f);
+	vec4 vector1 (0.5f, 0.2f, 0.1f, 1.0f);
+	vec4 result = vector + vector1;
 
 	while (!window.Closed ()) {
 
 		window.Clear ();
-		double x, y;
-		window.getMousePosition (x, y);
-		std::cout << x << " " << y << std::endl;
+		std::cout << result << std::endl;
 
 #if 1
 		glBegin (GL_QUADS);
