@@ -1,6 +1,6 @@
 #include "vec2.h"
 namespace sparky {
-	namespace math {
+	namespace maths {
 
 		vec2::vec2 () {
 			x = 0.0f;

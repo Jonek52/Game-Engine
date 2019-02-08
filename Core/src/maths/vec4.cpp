@@ -1,6 +1,6 @@
 #include "vec4.h"
 namespace sparky {
-	namespace math {
+	namespace maths {
 
 
 		vec4::vec4 () {

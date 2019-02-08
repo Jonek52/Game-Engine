@@ -5,7 +5,7 @@ int main () {
 
 	using namespace sparky;
 	using namespace graphics;
-	using namespace math;
+	using namespace maths;
 
 	Window window ("Sparky!", 800, 600);
 	glClearColor (0.2f, 0.3f, 0.8f, 1.0f);
