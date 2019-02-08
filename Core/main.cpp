@@ -19,10 +19,10 @@ int main () {
 	vec4 vector1 (0.5f, 0.2f, 0.1f, 1.0f);
 	vec4 result = vector + vector1;
 
+	mat4 position = mat4::translation (vec3 (2, 3, 4));
 	while (!window.Closed ()) {
 
 		window.Clear ();
-		std::cout << result << std::endl;
 
 #if 1
 		glBegin (GL_QUADS);

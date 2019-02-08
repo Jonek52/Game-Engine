@@ -130,12 +130,10 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\maths\mat4.cpp" />
+    <ClCompile Include="src\maths\maths.cpp" />
     <ClCompile Include="src\maths\vec2.cpp" />
     <ClCompile Include="src\maths\vec3.cpp" />
     <ClCompile Include="src\maths\vec4.cpp" />
-    <ClCompile Include="src\math\vec2.cpp" />
-    <ClCompile Include="src\math\vec3.cpp" />
-    <ClCompile Include="src\math\vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h" />
@@ -144,10 +142,6 @@
     <ClInclude Include="src\maths\vec2.h" />
     <ClInclude Include="src\maths\vec3.h" />
     <ClInclude Include="src\maths\vec4.h" />
-    <ClInclude Include="src\math\math.h" />
-    <ClInclude Include="src\math\vec2.h" />
-    <ClInclude Include="src\math\vec3.h" />
-    <ClInclude Include="src\math\vec4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
