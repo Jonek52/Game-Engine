@@ -56,11 +56,12 @@ namespace sparky {
 
 			mat4 result (1.0f);
 
-			result.elements[0 * 4 + 0] = 2 / (right - left);
-			result.elements[1 * 4 + 1] = 2 / (top - bottom);
-			result.elements[2 * 4 + 2] = -2 / (far - near);
-			result.elements[3 * 4 + 0] = (right + left) / (right - left);
-			result.elements[3 * 4 + 1] = (top + bottom) / (top - bottom);
+			result.elements[0 * 4 + 0] = 2.0f / (right - left);
+			result.elements[1 * 4 + 1] = 2.0f / (top - bottom);
+			result.elements[2 * 4 + 2] = 2.0f / (near - far);
+
+			result.elements[3 * 4 + 0] = (right + left) / (left - right);
+			result.elements[3 * 4 + 1] = (top + bottom) / (bottom - top);
 			result.elements[3 * 4 + 2] = (far + near) / (far - near);
 
 			return result;
@@ -95,7 +96,7 @@ namespace sparky {
 
 			return result;
 		}
-		
+
 		mat4 mat4::rotation (float angle, const vec3& axis) {
 
 			mat4 result (1.0f);
@@ -115,7 +116,7 @@ namespace sparky {
 			result.elements[0 * 4 + 2] = z * x * omc - y * s;
 
 			result.elements[1 * 4 + 0] = x * y * omc - z * s;
-			result.elements[1 * 4 + 1] = c + y * y * omc; 
+			result.elements[1 * 4 + 1] = c + y * y * omc;
 			result.elements[1 * 4 + 2] = z * y * omc + x * s;
 
 			result.elements[2 * 4 + 0] = x * z * omc + y * s;
@@ -124,7 +125,7 @@ namespace sparky {
 
 			return result;
 		}
-		
+
 		mat4 mat4::scale (const vec3& scale) {
 
 			mat4 result (1.0f);
